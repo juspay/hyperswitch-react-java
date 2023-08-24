@@ -33,7 +33,7 @@ public class server {
         https://api-reference.hyperswitch.io/docs/hyperswitch-api-reference/60bae82472db8-payments-create
       */
 
-      String payload = "{ \"amount\": 100, \"currency\": \"USD\" }";
+      String payload = "{ \"amount\": 100, \"currency\": \"USD\", \"customer_id\": \"hyperswitch_customer\" }";
 
       String response_string = createPayment(payload);
       JSONObject response_json = new JSONObject(response_string);
